@@ -39,13 +39,13 @@ body {
     border: 0.188rem solid transparent ;
     border-radius: 0rem;
     transition: 150ms;
-  }
+}
   
 .CTA1:active {
     border: 0.188rem solid transparent;
-    box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    transform: rotateY(30deg) rotateX(30deg) rotateZ(30deg);
+    transform-style: preserve-3d;
+    transition: 1s;
   }
 
 /* IMAGE SETTINGS */
