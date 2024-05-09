@@ -1,5 +1,55 @@
-@charset "UTF-8";
 /* This is a CSS file */
+@charset "UTF-8";
+
+/* Body settings */
+body {
+    background-color: #0a0a0a;
+}
+
+/* Site Scaler using rem-system (Root ) */
+:root {
+    font-size: 16px;
+}
+
+/* TEXT SETTINGS */
+
+.Text-Button {
+  font-family: "Overpass Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Buttons */
+.CTA1 {
+    line-height: 3rem;
+    padding: 0.3rem 2rem 0rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: transparent;
+    color: #dc993b;
+    border-radius: 2.8rem;
+    border: 0.188rem solid #dc993b;
+    transition: 1s;
+  }
+  
+.CTA1:hover {
+    background-color: #dc993b;
+    color: #0a0a0a;
+    border: 0.188rem solid transparent ;
+    border-radius: 0rem;
+    transition: 150ms;
+  }
+  
+.CTA1:active {
+    border: 0.188rem solid transparent;
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+/* IMAGE SETTINGS */
+
 #img1 {
     height: auto;
     width: 100%;
