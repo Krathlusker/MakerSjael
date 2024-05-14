@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* This is a CSS file */
+
+:root {
+    font-size: 16px;
+
+    /* COLORS */
+    --black: #0a0a0a;
+    --red: #F44E50;
+    --red-active: hsl(359, 88%, 80%);
+    --white: #e6e6e6;
+
+    /* Transitiontimers */
+    --buttontime: 250ms;
+}
