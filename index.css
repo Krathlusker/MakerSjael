@@ -1,52 +1,133 @@
 /* This is a CSS file */
 @charset "UTF-8";
 
-/* Body settings */
-body {
-    background-color: #0a0a0a;
-}
+
 
 /* Site Scaler using rem-system (Root ) */
 :root {
     font-size: 16px;
+
+    /* COLORS */
+    --black: #0a0a0a;
+    --red: #F44E50;
+    --red-active: hsl(359, 88%, 80%);
+    --white: #e6e6e6;
+
+    /* temporary test variables */
+    color: var(--white);
+    /* Transitiontimers */
+    --buttontime: 250ms;
+}
+
+/* Body settings */
+body {
+  background-color: var(--black);
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+/* Textbox settings */
+.boxtext {
+  color: var(--white);
+}
+
+/* Wrappers */
+.sitewrap {
+  margin: 3rem 1rem 3rem 1rem;
+}
+
+.columnflex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sections */
+.aboutme {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutme > img {
+  height: 100%;
+  width: 10rem;
 }
 
 /* TEXT SETTINGS */
-
-.Text-Button {
+.textbutton {
   font-family: "Overpass Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
+.textbody {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.textheading {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.textfooter {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* List settings */
+ul {
+  list-style-type: none;
+}
+
 /* Buttons */
 .CTA1 {
-    line-height: 3rem;
-    padding: 0.3rem 2rem 0rem 2rem;
-    font-size: 2rem;
+    font-size: 16px;
+    line-height: 2em;
+    padding: 0.2em 1.5em 0em 1.5em;
     text-align: center;
     background-color: transparent;
-    color: #dc993b;
-    border-radius: 2.8rem;
-    border: 0.188rem solid #dc993b;
-    transition: 1s;
-  }
+    color: var(--red);
+    border-radius: 2.8em;
+    border: 0.188em solid var(--red);
+    transition: var(--buttontime);
+}
   
 .CTA1:hover {
-    background-color: #dc993b;
-    color: #0a0a0a;
-    border: 0.188rem solid transparent ;
-    border-radius: 0rem;
-    transition: 150ms;
+  all: none;
 }
   
 .CTA1:active {
-    border: 0.188rem solid transparent;
-    transform: rotateY(30deg) rotateX(30deg) rotateZ(30deg);
-    transform-style: preserve-3d;
-    transition: 1s;
+  background-color: var(--red);
+  color: #0a0a0a;
+  border: 0.188em solid transparent ;
+  border-radius: 0em;
+  transition: calc(var(--buttontime)/2);
+}
+
+/* Buttons Q's */
+@media screen and (min-width: 600px){
+  .CTA1 {
+    font-size: 24px;
+    transition: var(--buttontime);
   }
+  .CTA1:hover {
+    background-color: var(--red);
+    color: #0a0a0a;
+    border: 0.188em solid transparent ;
+    border-radius: 0em;
+    transition: var(--buttontime);
+  }
+  .CTA1:active {
+    transition: 0s;
+    background-color: var(--red-active);
+  }
+}
 
 /* IMAGE SETTINGS */
 
