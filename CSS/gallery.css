@@ -12,26 +12,26 @@
 .wrapper i { 
     height: 50px; 
     width: 50px; 
-    text-align: center; 
     cursor: pointer; 
     position: absolute; 
-    top: 50%; 
-    font-size: 1.25 rem; 
+    top: 45%; 
     transform: translateY(-50%); 
     transition: 500ms;
-  
+    background-color: #0a0a0aB3;
 } 
   
 #left {
     background-image: url('../img/pilleft.svg');
-    background-size: contain;
+    background-size: fill;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #right {
     background-image: url('../img/pilright.svg');
-    background-size: contain;
+    background-size: fill;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .wrapper i:first-child {
     left: 16px;
@@ -120,7 +120,9 @@
 .card .img video:nth-of-type(1) {
     object-position: -440px 0px;
 }
-  
+
+/* Gallery MQ's */
+
 @media screen and (max-width: 900px) { 
     .wrapper .carousel { 
         grid-auto-columns: calc((100% / 2) - 9px); 

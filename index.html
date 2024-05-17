@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>makerSJÆL - din go-to multimediedesigner</title>
     <meta name="description" content="Front page">
-    <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
     <link rel="stylesheet" type="text/css" href="CSS/gallery.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navigation.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="JS/gallery.js" defer></script>
-    <script src="JS/year.js" defer></script>
+    <script src="JS/onscroll.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
@@ -16,9 +18,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div>
-        <img src="img/LOGO.svg" alt="makerSJÆL logo">
+    <header>
+      <div class="menuparent textmenu">
+        <input class="hidden" type="checkbox" id="active">
+        <label for="active" onclick="switchImg()" class="menu-btn"><img src="/img/menuframe.svg" alt="Menuknap "><span></span></label>
+        <label for="active" class="close"></label>
+        <nav class="menuwrapper">
+          <ul>
+            <li class="separatorline"></li>
+            <li><a href="/index.html">FORSIDE</a></li>
+            <li class="separatorline"></li>
+            <li><a href="/portfolio.html">PORTEFØLJE</a></li>
+            <li class="separatorline"></li>
+            <li><a href="/contact.html">KONTAKT</a></li>
+            <li class="separatorline"></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu2scroll">
+      <nav class="menuparent2 textmenu">
+        <ul>
+          <li><a href="/index.html">FORSIDE</a></li>
+          <li class="separatorline"></li>
+          <li><a href="/portfolio.html">PORTEFØLJE</a></li>
+          <li class="separatorline"></li>
+          <li><a href="/contact.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div class="headerLogo">
+        <div>
+          <img src="img/LOGO.svg" alt="makerSJÆL logo">
+        </div>
       </div>
     </header>
     <div class="sitewrap">
@@ -31,7 +62,7 @@
                 <p class="boxtext textbody">Multimediedesigner med erfaring inden for udvikling, designproces og contentproduktion.</p>
               </div>
             <div id="about2">
-              <img src="img/headshot.png" alt="Billede af Frederik Krath Nielsen, ejer af makerSJÆL">
+              <img src="img/headshot.webp" alt="Billede af Frederik Krath Nielsen, ejer af makerSJÆL">
             </div>
           </section>
           <section class="portfolio">
@@ -41,28 +72,28 @@
                 <i id="left" class="fa-solid  fas fa-angle-left"></i>
                 <ul class="carousel">
                     <li class="card">
-                      <div class="img"><video src="/img/Menneskeroghobbyer540p25.webm" autoplay muted alt="" draggable="false"></div> 
-                      <h3 class="textheading">SE MERE</h3>
+                      <div class="img"><video src="/img/Menneskeroghobbyer540p25.webm" muted autoplay playsinline loop draggable="false"></video></div> 
+                      <h3 class="textheadinggallery">VIDEO PRODUKTION</h3>
                     </li> 
                     <li class="card"> 
-                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" type="video/mp4" alt="" draggable="false"></div> 
-                        <h3 class="textheading">SE MERE</h3>
-                    </li> 
-                    <li class="card"> 
-                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
-                        <h3 class="textheading">SE MERE</h3>
+                      <div class="img"><video src="/img/Menneskeroghobbyer540p25.webm" muted autoplay playsinline loop draggable="false"></video></div> 
+                      <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                     <li class="card"> 
                         <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
-                        <h3 class="textheading">SE MERE</h3>
+                        <h3 class="textheadinggallery">SE MERE</h3>
+                    </li> 
+                    <li class="card"> 
+                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
+                        <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                     <li class="card"> 
                         <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"> </div> 
-                        <h3 class="textheading">SE MERE</h3>
+                        <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                     <li class="card"> 
                         <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"> </div> 
-                        <h3 class="textheading">SE MERE</h3>
+                        <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                 </ul> 
                 <i id="right" class="fa-solid fas fa-angle-right"></i> 
@@ -81,9 +112,9 @@
       </div>
     </div>
     <footer class="footertop">
-      <section class="footerfade">
-      </section>
-      <section class="footerbottom sitewrap">
+      <div class="footerfade">
+      </div>
+      <div class="footerbottom sitewrap">
         <div class="footerline1">
           <ul class="textfooter">
             <li><a href="index.html">&#8226; FORSIDE</a></li>
@@ -91,7 +122,7 @@
             <li><a href="contact.html" class="CTAlink backwardstext">&#8226; KONTAKT</a></li>
           </ul>
           <div class="footerlogosub">
-            <img class="footerlogo" src="img/LOGO - red.svg" alt="">
+            <img class="footerlogo" src="img/LOGO_red.svg" alt="">
           </div>
         </div>
         <a href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7" class="footerline2"></a>
@@ -104,7 +135,7 @@
           <a><img src="img/fb.svg" alt="Facebook icon med link til Frederik Krath Nielsens facebook-bruger"></a>
           <div></div>
         </div>
-    </section>
+      </div>
     </footer>
   </body>
 </html>

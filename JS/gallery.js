@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
           
         // Autoplay the carousel after every 2500ms 
         timeoutId = setTimeout(() =>  
-            carousel.scrollLeft += firstCardWidth, 2500); 
+            carousel.scrollLeft += firstCardWidth, 3500); 
     }; 
   
     carousel.addEventListener("mousedown", dragStart); 
@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("mouseup", dragStop); 
     wrapper.addEventListener("mouseenter", () =>  
         clearTimeout(timeoutId)); 
-    wrapper.addEventListener("mouseleave", autoPlay); 
+    // I have deactivated autoscroll (Autoplay) - Uncomment below to activate again
+    // wrapper.addEventListener("mouseleave", autoPlay); 
   
     // Add event listeners for the arrow buttons to  
     // scroll the carousel left and right 
