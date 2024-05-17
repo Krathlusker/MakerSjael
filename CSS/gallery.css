@@ -18,6 +18,7 @@
     transform: translateY(-50%); 
     transition: 500ms;
     background-color: #0a0a0aB3;
+    z-index: 8;
 } 
   
 #left {
@@ -117,30 +118,34 @@
 }
 
 /* Settings for individual cards */
-.card .img video:nth-of-type(1) {
+#galvid1 {
     object-position: -440px 0px;
 }
 
-/* Gallery MQ's */
+#galvid2 {
+    object-position: 0px 0px;
+}
 
+/* Gallery MQ's */
+/* Settings for individual at desktop */
 @media screen and (max-width: 900px) { 
     .wrapper .carousel { 
         grid-auto-columns: calc((100% / 2) - 9px); 
   
     } 
 
-    .card .img video:nth-of-type(1) {
+    #galvid1 {
         object-position: -420px 0px;
     }
 } 
-  
+/* Settings for individual cards at landscape*/
 @media screen and (max-width: 600px) { 
     .wrapper .carousel { 
         grid-auto-columns: 100%; 
   
     } 
 
-    .card .img video:nth-of-type(1) {
+    #galvid1 {
         object-position: -350px 0px;
     }
 }
@@ -152,8 +157,8 @@
         height: 360px; 
     } 
 
-    .card .img video:nth-of-type(1) {
-        object-position: 0px 0px;
-    }
-
+    #galvid1 {
+        object-position: -180px 0px;
+    } 
+    
 }

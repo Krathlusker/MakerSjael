@@ -73,6 +73,13 @@ body {
   font-size: 1.375rem;
 }
 
+.textfooter2 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
 .textmenu {
   font-family: "Overpass", sans-serif;
   font-weight: 600;
@@ -117,7 +124,13 @@ a {
 header {
   display: flex;
   flex-direction: column;
+  height: auto;
   width: 100%;
+}
+
+.topfade1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--black) 120%);
+  height: 100%;
 }
 
 .headerLogo {
@@ -146,6 +159,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 #about1 {
@@ -237,6 +251,7 @@ header {
 .textfooter > * {
   line-height: 1rem;
 }
+
 .textfooter :nth-child(3) {
   display: flex;
   justify-content: right;
@@ -275,19 +290,40 @@ header {
   width: 100%;
 }
 
+.footericonswrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 7rem;
+}
+
+
+.footericonstext {
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footericons {
-  margin-top: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
+  justify-content: center;
+  height: 3rem;
+  padding-top: 1.5rem;
+  gap: 3rem;
 }
 
 .footericons > *  {
   max-width: 100%;
   height: 100%;
-  margin-bottom: 7rem;
+}
+
+.footericons > * img {
+  height: 100%;
 }
 
 /* Sections MQ's */
@@ -320,8 +356,31 @@ header {
     height: 15rem;
   }
 
+  .footericonswrapper{
+    flex-direction: row;
+    margin-bottom: 7rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
   .footericons {
-    margin: 2rem 0 8rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 4rem;
+    padding-top: 0;
+  }
+  
+  .footericonstext {
+    line-height: 2.5rem;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .footericonswrapper > div {
+    font-size: 1.5rem;
   }
 }
 
@@ -361,6 +420,7 @@ header {
   .footertop {
     margin-top: 3rem;
   }
+
 }
 
 /* Text paddings */

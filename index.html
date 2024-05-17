@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = “theme-color” content = “#0a0a0a”>
     <title>makerSJÆL - din go-to multimediedesigner</title>
     <meta name="description" content="Front page">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
@@ -10,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="CSS/navigation.css">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="JS/gallery.js" defer></script>
-    <script src="JS/onscroll.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
@@ -35,23 +35,23 @@
           </ul>
         </nav>
       </div>
-      <div class="menu2scroll">
-      <nav class="menuparent2 textmenu">
-        <ul>
-          <li><a href="/index.html">FORSIDE</a></li>
-          <li class="separatorline"></li>
-          <li><a href="/portfolio.html">PORTEFØLJE</a></li>
-          <li class="separatorline"></li>
-          <li><a href="/contact.html">KONTAKT</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="menu2">
+        <nav class="topfade1 menuparent2 textmenu">
+          <ul>
+            <li><a href="/index.html">FORSIDE</a></li>
+            <li class="separatorline"></li>
+            <li><a href="/portfolio.html">PORTEFØLJE</a></li>
+            <li class="separatorline"></li>
+            <li><a href="/contact.html">KONTAKT</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="headerLogo">
         <div>
           <img src="img/LOGO.svg" alt="makerSJÆL logo">
         </div>
       </div>
-    </header>
+  </header>
     <div class="sitewrap">
       <div class="columnflex">
         <main class="items">
@@ -72,27 +72,27 @@
                 <i id="left" class="fa-solid  fas fa-angle-left"></i>
                 <ul class="carousel">
                     <li class="card">
-                      <div class="img"><video src="/img/Menneskeroghobbyer540p25.webm" muted autoplay playsinline loop draggable="false"></video></div> 
+                      <div class="img"><video id="galvid1" src="/img/Menneskeroghobbyer540p25.webm" muted autoplay playsinline loop draggable="false" type="video/webm"></video></div> 
                       <h3 class="textheadinggallery">VIDEO PRODUKTION</h3>
                     </li> 
                     <li class="card"> 
-                      <div class="img"><video src="/img/Menneskeroghobbyer540p25.webm" muted autoplay playsinline loop draggable="false"></video></div> 
+                      <div class="img"><video id="galvid2" src="/img/Menneskeroghobbyer540p25.webm" muted autoplay playsinline loop draggable="false" type="video/webm"></video></div> 
                       <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                     <li class="card"> 
-                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
+                      <div class="img"><img id="galvid3" src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
+                      <h3 class="textheadinggallery">SE MERE</h3>
+                    </li> 
+                    <li class="card"> 
+                        <div class="img"><img id="galvid4" src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
                         <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                     <li class="card"> 
-                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"></div> 
+                        <div class="img"><img id="galvid5" src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"> </div> 
                         <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                     <li class="card"> 
-                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"> </div> 
-                        <h3 class="textheadinggallery">SE MERE</h3>
-                    </li> 
-                    <li class="card"> 
-                        <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"> </div> 
+                        <div class="img"><img id="galvid6" src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" alt="" draggable="false"> </div> 
                         <h3 class="textheadinggallery">SE MERE</h3>
                     </li> 
                 </ul> 
@@ -126,14 +126,16 @@
           </div>
         </div>
         <a href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7" class="footerline2"></a>
-        <div class="footericons">
-          <div></div>
-          <a><img src="img/yt.svg" alt="Youtube icon med link til FlydendeFreds youtubekanal"></a>
-          <div></div>
-          <a><img src="img/camping.svg" alt="Piktogram af telt som betyder camping med link til Carlsberg Campings hjemmeside"></a>
-          <div></div>
-          <a><img src="img/fb.svg" alt="Facebook icon med link til Frederik Krath Nielsens facebook-bruger"></a>
-          <div></div>
+        <div class="footericonswrapper">
+          <div class="footericons">
+            <a><img src="img/yt.svg" alt="Youtube icon med link til FlydendeFreds youtubekanal"></a>
+            <a><img src="img/camping.svg" alt="Piktogram af telt som betyder camping med link til Carlsberg Campings hjemmeside"></a>
+            <a><img src="img/linkedIn_icon.svg" alt="Facebook icon med link til Frederik Krath Nielsens facebook-bruger"></a>
+          </div>
+          <div class="footericonstext textfooter2">
+            <div><a href="mailto:mail@makersjæl.dk">mail@makersjæl.dk</a></div>
+            <div><a href="https://maps.app.goo.gl/jDF7qEXrdrc8YeGe6">Sundbrovej, 5700, Svendborg</a></div>
+          </div>
         </div>
       </div>
     </footer>

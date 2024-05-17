@@ -114,14 +114,16 @@ transition: background .3s;
 
 /* Secondary Menu */
 
-.menu2scroll {
+.menu2 {
     display: none;
     position: fixed;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, var(--black) 120%);
     z-index: 10;
     opacity: 100;
-    transition: background .3s cubic-bezier(1,0,1,1);
+    animation: navgradient linear forwards;
+    animation-timeline: view();
+    animation-range-start: 100vh;
+    animation-range-end: 110vh;
 }
 
 .menuparent2 {
@@ -139,10 +141,29 @@ transition: background .3s;
     padding: 1rem 1rem 1rem 1rem;
     max-width: var(--maxwidth);
     line-height: 4.5rem;
+    animation: navsize linear forwards;
+    animation-timeline: view();
+    animation-range-start: 100vh;
+    animation-range-end: 110vh;
 }
 
-.menu2scroll.scrolling {
-    background: var(--black);
+.menuparent2 > ul > li {
+    padding-top: 0.3rem;
+}
+
+
+@keyframes navgradient {
+    100% {
+        background:var(--black);
+
+    }
+}
+
+@keyframes navsize {
+    100% {
+        line-height: 2rem;
+        font-size: 1.5rem;
+        }
 }
 
 /* MQ's */
@@ -151,7 +172,7 @@ transition: background .3s;
         opacity: 0%;
     }
 
-    .menu2scroll {
+    .menu2 {
         display: unset;
     }
 }
