@@ -325,6 +325,44 @@ header {
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .headerLogo {
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    height: 15rem;
+    margin-bottom: -7rem;
+  }
+  
+  .headerLogo > div {
+    justify-content: flex-start;
+    width: 100%;
+    max-width: var(--maxwidth);
+    padding: 0 1rem 0 1rem;
+  }
+
+  .headerLogo img {
+    height: 10rem;
+    margin-top: -6rem;
+  }
+
+  .columnflex > .items{
+    gap: 3rem;
+  }
+
+  .footerfade {
+    background-size: 73rem;
+    background-position: 0% 15%;
+  }
+  
+  .footerfade {
+    height: 12rem;
+  }
+  
+  .footertop {
+    margin-top: 3rem;
+  }
+}
+
 /* Text paddings */
 .textpadding {
   padding: 1rem 0 1rem 0;
@@ -339,15 +377,15 @@ ul {
 
 /* Buttons */
 .CTA1 {
-    font-size: 1rem;
-    line-height: 2em;
-    padding: 0.2em 1.5em 0em 1.5em;
-    text-align: center;
-    background-color: transparent;
-    color: var(--red);
-    border-radius: 2.8em;
-    border: 0.188em solid var(--red);
-    transition: var(--buttontime);
+  font-size: 1rem;
+  line-height: 2em;
+  padding: 0.2em 1.5em 0em 1.5em;
+  text-align: center;
+  background-color: transparent;
+  color: var(--red);
+  border-radius: 2.8em;
+  border: 0.188em solid var(--red);
+  transition: var(--buttontime);
 }
   
 .CTA1:active {
