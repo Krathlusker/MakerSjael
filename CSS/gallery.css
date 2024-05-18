@@ -94,7 +94,7 @@
   
 .card .img { 
     width: 100%; 
-    height: 100%; 
+    height: 90%; 
     border-radius: 50%; 
 } 
   
@@ -138,11 +138,10 @@
         object-position: -420px 0px;
     }
 } 
-/* Settings for individual cards at landscape*/
+/* Settings for individual cards at smaller screen width */
 @media screen and (max-width: 600px) { 
     .wrapper .carousel { 
         grid-auto-columns: 100%; 
-  
     } 
 
     #galvid1 {
@@ -150,15 +149,15 @@
     }
 }
 
+
 /* max-width because all screens over 768 (desktops) shold not get scaled */
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .carousel .card { 
-        height: 360px; 
+        height: 280px; 
     } 
 
     #galvid1 {
-        object-position: -180px 0px;
+        object-position: 0px 0px;
     } 
-    
 }
