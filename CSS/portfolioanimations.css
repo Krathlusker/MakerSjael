@@ -1,0 +1,135 @@
+.slider1 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    max-width: fit-content;
+}
+
+.sliderwrapper1 {
+    height: 100%;
+    max-width: 15rem;
+    display: flex;
+    animation: slide1 16s infinite;
+/* It turned out safari doesnt play nice with animations, so heres a double the code.. Why Thomas.. Why.. ;-) */
+    -webkit-animation: slide1 12s infinite;;
+    animation-delay: 0.001s;
+    -webkit-animation-delay: 0.001s;
+}
+
+@keyframes slide1 {
+    0%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    95%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide1{
+    0%{
+        -webkit-transform: translateX(0%);
+    }
+    30%{
+        -webkit-transform: translateX(0%);
+    }
+    33%{
+        -webkit-transform: translateX(-100%);
+    }
+    60%{
+        -webkit-transform: translateX(-100%);
+    }
+    66%{
+        -webkit-transform: translateX(-200%);
+    }
+    95%{
+        -webkit-transform: translateX(-200%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.sliderwrapper1 img {
+    object-fit: contain;
+}
+
+.slider2 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sliderwrapper2 {
+    height: 100%;
+    display: flex;
+    animation: slide2 16s infinite;
+    -webkit-animation: slide2 16s infinite;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+@keyframes slide2{
+    0%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    95%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide2{
+    0%{
+        -webkit-transform: translateX(0%);
+    }
+    30%{
+        -webkit-transform: translateX(0%);
+    }
+    33%{
+        -webkit-transform: translateX(-100%);
+    }
+    60%{
+        -webkit-transform: translateX(-100%);
+    }
+    66%{
+        -webkit-transform: translateX(-200%);
+    }
+    95%{
+        -webkit-transform: translateX(-200%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+    }
+}
+.sliderwrapper2 img {
+    object-fit: cover;
+}

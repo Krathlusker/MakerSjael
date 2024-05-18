@@ -3,123 +3,7 @@
 
 @import url(/CSS/constants.css);
 
-/* Layer codes for setting depth */
-#zindex1 {z-index: 1;}
-#zindex2 {z-index: 2;}
-#zindex3 {z-index: 3;}
-#zindex4 {z-index: 4;}
-#zindex5 {z-index: 5;}
-#zindex6 {z-index: 6;}
-#zindex7 {z-index: 7;}
-#zindex8 {z-index: 8;}
-#zindex9 {z-index: 9;}
-#zindex10 {z-index: 10;}
 
-/* temporary test variables */
-:root {
-color: var(--white);
-}
-
-/* Body settings */
-body {
-  background-color: var(--black);
-  width: 100%;
-  min-width: 19rem;
-  min-height: 19rem;
-  height: 100vh;
-}
-
-/* Margin resets */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Text settings */
-.textbutton {
-  font-family: "Overpass Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.5rem;
-}
-
-.textbody {
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 108%;
-}
-
-.textheading {
-  font-family: "Overpass", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 1.875rem;
-  line-height: 90%;
-}
-
-.textheadinggallery {
-  font-family: "Overpass", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 1.8rem;
-  line-height: 90%;
-}
-
-.textfooter {
-  font-family: "Overpass", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.375rem;
-}
-
-.textfooter2 {
-  font-family: "Overpass", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 1.25rem;
-}
-
-.textmenu {
-  font-family: "Overpass", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.375rem;
-}
-
-/* Link settings */
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-/* Textbox settings */
-.boxtext {
-  color: var(--white);
-}
-
-/* Wrappers */
-.sitewrap {
-  max-width: var(--maxwidth);
-  margin: 0 auto;
-  padding: 0 1rem 0 1rem;
-}
-
-.columnflex {
-  max-width: var(--maxwidth);
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  justify-content: center;
-}
-
-.columnflex > .items{
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  gap: 7rem;
-}
 
 /* Sections */
 header {
@@ -396,10 +280,6 @@ header {
   .headerLogo img {
     height: 10rem;
     padding-top: 7rem;
-  }
-
-  .aboutme {
-
   }
 
   #about2 > img {
