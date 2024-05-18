@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* This is a CSS file */
 
+.menuparent {
+    display: initial;
+}
+
 .menuparent > * {
     margin: 0;
     padding: 0;
@@ -112,148 +116,155 @@ transition: background .3s;
     justify-content: space-between;
 }
 
+.menuwrapper ul li:hover {
+    
+}
+
 .hidden {
     display: none;
 }
 
-/* Secondary Menu */
-
 .menu2 {
     display: none;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    opacity: 100;
-    animation: navgradient linear forwards;
-    animation-timeline: view();
-    animation-range-start: 100vh;
-    animation-range-end: 110vh;
-}
-
-.menuparent2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.menuparent2 > ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
-    max-width: var(--maxwidth);
-    line-height: 4.5rem;
-    animation: navsize linear forwards;
-    animation-timeline: view();
-    animation-range-start: 100vh;
-    animation-range-end: 110vh;
-}
-
-.menuparent2 > ul > li {
-    padding-top: 0.3rem;
-
-}
-
-
-.menuparent2 > ul >li:nth-child(5) > a {
-    color: var(--red);
-}
-
-.nav * {
-    box-sizing: border-box;
-}
-
-.nav li {
-    display: inline-block;
-    list-style: outside none none;
-}
-
-.nav a {
-    padding: .3em .6em;
-    position: relative;
-    text-decoration: none;
-}
-
-.nav a::before,
-.nav a::after {
-  content: '';
-  height: 1rem;
-  width: 1rem;
-  position: absolute;
-  transition: all .35s ease;
-  opacity: 0;
-}
-
-.nav a::before {
-  content: '';
-  right: 0;
-  top: 0;
-  border-top: 4px solid var(--white);
-  border-right: 4px solid var(--white);
-  transform: translate(-100%, 50%);
-}
-
-.nav a:after {
-content: '';
-left: 0;
-bottom: 0;
-border-bottom: 4px solid var(--white);
-border-left: 4px solid var(--white);
-transform: translate(100%, -50%)
-}
-
-.nav a:hover:before,
-.nav a:hover:after{
-transform: translate(0,0);
-opacity: 1;
-}
-
-.nav a:hover {
-transition: all ;
-color: #ffffff;
-text-shadow: rgba(255,255,255,0.9) 0px 0px 10px;
-}
-
-/* To choose specific border-color for kontak */
-
-.nav > li:nth-child(5) > a:before {
-    border-top: 4px solid var(--red);
-    border-right: 4px solid var(--red);
-  }
-  
-  .nav > li:nth-child(5) > a:after {
-  border-bottom: 4px solid var(--red);
-  border-left: 4px solid var(--red);
-  }
-
-.nav > li:nth-child(5) > a:hover {
-    color: var(--red);
-    text-shadow: var(--red) 0px 0px 10px;
-}
-
-@keyframes navgradient {
-    100% {
-        background:var(--black);
-    }
-}
-
-@keyframes navsize {
-    100% {
-        line-height: 2rem;
-        font-size: 1.5rem;
-        }
 }
 
 /* MQ's */
 @media screen and (min-width: 768px) {
     .menuparent {
-        opacity: 0%;
+        display: none;
     }
+
+    /* Secondary Menu */
 
     .menu2 {
         display: unset;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        opacity: 100;
+        animation: navgradient linear forwards;
+        animation-timeline: view();
+        animation-range-start: 100vh;
+        animation-range-end: 110vh;
+    }
+
+    .menuparent2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuparent2 > ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 2rem;
+        padding: 1rem 0 1rem 0;
+        max-width: var(--maxwidth);
+        line-height: 4.5rem;
+        animation: navsize linear forwards;
+        animation-timeline: view();
+        animation-range-start: 100vh;
+        animation-range-end: 110vh;
+    }
+
+    .menuparent2 > ul > li {
+        padding-top: 0.3rem;
+    }
+
+
+    .menuparent2 > ul > li:nth-child(5) > a {
+        color: var(--red);
+    }
+
+    .menu2ani {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu2ani * {
+        box-sizing: border-box;
+    }
+
+    .menu2ani li {
+        display: inline-block;
+        list-style: outside none none;
+    }
+
+    .menu2ani a {
+        padding: .3em .6em;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .menu2ani a::before,
+    .menu2ani a::after {
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    transition: all .2s ease;
+    opacity: 0;
+    }
+
+    .menu2ani a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 4px solid var(--white);
+    border-right: 4px solid var(--white);
+    transform: translate(-100%, 50%);
+    }
+
+    .menu2ani a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid var(--white);
+    border-left: 4px solid var(--white);
+    transform: translate(100%, -50%)
+    }
+
+    .menu2ani a:hover:before,
+    .menu2ani a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+    }
+
+    .menu2ani a:hover {
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 10px;
+    }
+
+    /* To choose specific border-color for kontak */
+
+    .menu2ani > li:nth-child(5) > a:before {
+        border-top: 4px solid var(--red);
+        border-right: 4px solid var(--red);
+    }
+    
+    .menu2ani > li:nth-child(5) > a:after {
+        border-bottom: 4px solid var(--red);
+        border-left: 4px solid var(--red);
+    }
+
+    .menu2ani > li:nth-child(5) > a:hover {
+        color: var(--red);
+        text-shadow: var(--red) 0px 0px 10px;
+    }
+
+    @keyframes navgradient {
+        100% {
+            background:var(--black);
+        }
+    }
+
+    @keyframes navsize {
+        100% {
+            line-height: 2rem;
+            font-size: 1.5rem;
+            }
     }
 }
 

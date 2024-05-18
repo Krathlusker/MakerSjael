@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* This is a CSS file */
+
+@import url(index.css);
+
+.menu2 li:first-of-type img {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.headerLogo {
+    height: 8rem;
+}
+
+.headerLogo img {
+    height: 4.5rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+}
+
+.portgal {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.portgal video {
+    object-fit: cover;
+    height: 100%;
+}
+
+.portgalitems {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 20rem;
+}
+
+.left {
+    flex-basis: 50%;
+    min-width: 50%;
+    display: flex;
+}
+
+.right {
+    flex-basis: 50%;
+    min-width: 50%;
+    overflow: hidden;
+}
+
+  /* Sections MQ's */
+@media screen and (min-width: 768px) {
+    .headerLogo {
+      padding-top: 4rem;
+      height: 25rem;
+      height: 3rem;
+      margin-bottom: 0;
+    }
+
+    .headerLogo img {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .headerLogo img {
+    margin-top: 0rem;
+    }
+}

@@ -1,3 +1,4 @@
+// gallery.js 
 document.addEventListener("DOMContentLoaded", function() { 
     const carousel = document.querySelector(".carousel"); 
     const arrowBtns = document.querySelectorAll(".wrapper i"); 
