@@ -7,18 +7,15 @@
     width: 100%;
     overflow: hidden;
     display: flex;
-    max-width: fit-content;
 }
 
 .sliderwrapper1 {
     height: 100%;
-    max-width: 15rem;
     display: flex;
-    animation: slide3items 12s infinite;
-/* It turned out safari doesnt play nice with animations, so heres a double the code.. Why Thomas.. Why.. ;-) */
-    -webkit-animation: slide3items 12s infinite;;
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
+    animation: slide3items 13s infinite;
+    -webkit-animation: slide3items 13s infinite;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
 }
 
 .sliderwrapper1 img {
@@ -55,6 +52,7 @@
 
 .sliderwrapper3 {
     height: 100%;
+    width: 100%;
     display: flex;
     animation: slide3items 10s infinite;
     -webkit-animation: slide3items 10s infinite;
