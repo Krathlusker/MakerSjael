@@ -424,7 +424,6 @@ ul {
 
 .backwardstext:hover {
   transition: calc(var(--buttontime)/2);
-  transform: rotate(180deg);
 }
 
 /* Buttons MQ's */

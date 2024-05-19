@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* This is a CSS file */
+
+
+/* Graphical design slide */
 .slider1 {
     width: 100%;
     overflow: hidden;
@@ -9,14 +14,14 @@
     height: 100%;
     max-width: 15rem;
     display: flex;
-    animation: slide1 16s infinite;
+    animation: slide3items 16s infinite;
 /* It turned out safari doesnt play nice with animations, so heres a double the code.. Why Thomas.. Why.. ;-) */
-    -webkit-animation: slide1 12s infinite;;
+    -webkit-animation: slide3items 12s infinite;;
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
 
-@keyframes slide1 {
+@keyframes slide3items {
     0%{
         transform: translateX(0%);
     }
@@ -40,7 +45,7 @@
     }
 }
 
-@-webkit-keyframes slide1{
+@-webkit-keyframes slide3items{
     0%{
         -webkit-transform: translateX(0%);
     }
@@ -68,6 +73,7 @@
     object-fit: contain;
 }
 
+/* Photography slide */
 .slider2 {
     width: 100%;
     overflow: hidden;
@@ -77,59 +83,33 @@
 .sliderwrapper2 {
     height: 100%;
     display: flex;
-    animation: slide2 16s infinite;
-    -webkit-animation: slide2 16s infinite;
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
+    animation: slide3items 16s infinite;
+    -webkit-animation: slide3items 16s infinite;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
 }
 
-@keyframes slide2{
-    0%{
-        transform: translateX(0%);
-    }
-    30%{
-        transform: translateX(0%);
-    }
-    33%{
-        transform: translateX(-100%);
-    }
-    60%{
-        transform: translateX(-100%);
-    }
-    66%{
-        transform: translateX(-200%);
-    }
-    95%{
-        transform: translateX(-200%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-}
-
-@-webkit-keyframes slide2{
-    0%{
-        -webkit-transform: translateX(0%);
-    }
-    30%{
-        -webkit-transform: translateX(0%);
-    }
-    33%{
-        -webkit-transform: translateX(-100%);
-    }
-    60%{
-        -webkit-transform: translateX(-100%);
-    }
-    66%{
-        -webkit-transform: translateX(-200%);
-    }
-    95%{
-        -webkit-transform: translateX(-200%);
-    }
-    100%{
-        -webkit-transform: translateX(0%);
-    }
-}
 .sliderwrapper2 img {
+    object-fit: cover;
+}
+
+
+/* Storytelling slide */
+.slider3 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sliderwrapper3{
+    height: 100%;
+    display: flex;
+    animation: slide3items 10s infinite;
+    -webkit-animation: slide3items 10s infinite;
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+
+.sliderwrapper3 img {
     object-fit: cover;
 }
