@@ -163,7 +163,7 @@ transition: background .3s;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 1rem 0 1rem 0;
         max-width: var(--maxwidth);
         line-height: 4.5rem;
@@ -199,6 +199,10 @@ transition: background .3s;
     .menu2ani li {
         display: inline-block;
         list-style: outside none none;
+    }
+
+    #logominifix {
+        padding: 0 0 0 0;
     }
 
     .menu2ani a {
@@ -242,6 +246,21 @@ transition: background .3s;
     }
 
     /* To choose specific border-color for kontak */
+
+    .menu2ani > li:nth-child(1) > a:before {
+        border-top: unset;
+        border-right: unset;
+    }
+    
+    .menu2ani > li:nth-child(1) > a:after {
+        border-bottom: unset;
+        border-left: unset;
+    }
+
+    .menu2ani > li:nth-child(1) > a:hover {
+        color: var(--red);
+    }
+    
 
     .menu2ani > li:nth-child(5) > a:before {
         border-top: 4px solid var(--red);
