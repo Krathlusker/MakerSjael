@@ -14,11 +14,56 @@
     height: 100%;
     max-width: 15rem;
     display: flex;
-    animation: slide3items 16s infinite;
+    animation: slide3items 12s infinite;
 /* It turned out safari doesnt play nice with animations, so heres a double the code.. Why Thomas.. Why.. ;-) */
     -webkit-animation: slide3items 12s infinite;;
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
+}
+
+.sliderwrapper1 img {
+    object-fit: contain;
+}
+
+/* Photography slide */
+.slider2 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sliderwrapper2 {
+    height: 100%;
+    display: flex;
+    animation: slide3items 16s infinite;
+    -webkit-animation: slide3items 16s infinite;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+
+.sliderwrapper2 img {
+    object-fit: cover;
+}
+
+
+/* Storytelling slide */
+.slider3 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.sliderwrapper3 {
+    height: 100%;
+    display: flex;
+    animation: slide3items 10s infinite;
+    -webkit-animation: slide3items 10s infinite;
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+
+.sliderwrapper3 img {
+    object-fit: cover;
 }
 
 @keyframes slide3items {
@@ -67,49 +112,4 @@
     100%{
         -webkit-transform: translateX(0%);
     }
-}
-
-.sliderwrapper1 img {
-    object-fit: contain;
-}
-
-/* Photography slide */
-.slider2 {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-}
-
-.sliderwrapper2 {
-    height: 100%;
-    display: flex;
-    animation: slide3items 16s infinite;
-    -webkit-animation: slide3items 16s infinite;
-    animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-}
-
-.sliderwrapper2 img {
-    object-fit: cover;
-}
-
-
-/* Storytelling slide */
-.slider3 {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-}
-
-.sliderwrapper3{
-    height: 100%;
-    display: flex;
-    animation: slide3items 10s infinite;
-    -webkit-animation: slide3items 10s infinite;
-    animation-delay: 6s;
-    -webkit-animation-delay: 6s;
-}
-
-.sliderwrapper3 img {
-    object-fit: cover;
 }
