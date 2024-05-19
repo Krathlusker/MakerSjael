@@ -12,8 +12,8 @@
     animation: slide1 16s infinite;
 /* It turned out safari doesnt play nice with animations, so heres a double the code.. Why Thomas.. Why.. ;-) */
     -webkit-animation: slide1 12s infinite;;
-    animation-delay: 0.001s;
-    -webkit-animation-delay: 0.001s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 
 @keyframes slide1 {

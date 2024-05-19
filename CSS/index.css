@@ -3,8 +3,6 @@
 
 @import url(/CSS/constants.css);
 
-
-
 /* Sections */
 header {
   display: flex;
@@ -23,7 +21,7 @@ header {
   url("../img/hero.webp");
   background-size: cover;
   height: 25rem;
-  margin-bottom: -4rem;
+  margin-bottom: -5rem;
 }
 
 .headerLogo div {
@@ -51,6 +49,10 @@ header {
   flex-direction: column;
   width: 100%;
   padding-top: 4rem;
+}
+
+#about1 > div > img {
+  display: none;
 }
 
 #about2 {
@@ -277,11 +279,37 @@ header {
     max-width: var(--maxwidth);
   }
 
-  .headerLogo img {
-    height: 10rem;
-    padding-top: 7rem;
+    .headerLogo {
+      padding-top: 4rem;
+      height: 30rem;
+      margin-bottom: -26rem;
+    }
+
+    .headerLogo img {
+        display: none;
+    }
+
+  #about1 {
+    padding-top: 6rem;
   }
 
+  #about1 > div {
+    display: flex;
+  }
+
+  #about1 > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 2rem;
+  }
+
+  #about1 > div > img {
+    height: 11rem;
+    display: unset;
+  }
+  
   #about2 > img {
     max-height: 50rem;
   }
@@ -396,7 +424,7 @@ ul {
 
 .backwardstext:hover {
   transition: calc(var(--buttontime)/2);
-  transform: rotate3d(180deg);
+  transform: rotate(180deg);
 }
 
 /* Buttons MQ's */
