@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* This is a CSS file */
+
+@import url(index.css);
+
+.headerLogo {
+    height: 8rem;
+}
+
+.headerLogo img {
+    height: 4.5rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+}
+
+.portgal {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.portgalitems {
+    display: flex;
+    gap: 1rem;
+}
+
+.portgal video, .portgal img{
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+}
+
+.poster {
+    display: flex;
+    flex-direction: column;
+}
+
+.poster > div {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.portgal > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+  /* Sections MQ's */
+@media screen and (min-width: 768px) {
+    .headerLogo {
+      padding-top: 4rem;
+      height: 4rem;
+      margin-bottom: 0;
+    }
+
+    .headerLogo img {
+        display: none;
+    }
+
+    .poster > div {
+        width: 100%;
+        max-width: 60%;
+    }
+}
+
+
+
+/* Animation */
+.sprite {	
+	background-image: url('/img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: flex;
+    animation: animationworkshop 3s steps(23) infinite;	
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.portgal > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.awcontainer {
+    box-sizing: border-box;
+}
+
+@keyframes animationworkshop {
+	0% {background-position: 0px;}
+	100% {background-position: -23000px;}
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .headerLogo img {
+    margin-top: 0rem;
+    }
+}
