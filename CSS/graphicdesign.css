@@ -3,6 +3,8 @@
 
 @import url(index.css);
 
+
+
 .headerLogo {
     height: 8rem;
 }
@@ -32,7 +34,7 @@
 
 .poster {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .poster > div {
@@ -40,12 +42,20 @@
     max-width: 100%;
 }
 
-
+/* Poster */
 .portgal > div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
+
+/* The one after poster */
+.portgal > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
   /* Sections MQ's */
 @media screen and (min-width: 768px) {
     .headerLogo {
@@ -65,35 +75,68 @@
 }
 
 
+/* Fullscreen images system */
+#fullpage {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-/* Animation */
-.sprite {	
-	background-image: url('/img/spritesheet.png');
-    background-repeat: no-repeat;
-    display: flex;
-    animation: animationworkshop 3s steps(23) infinite;	
-    height: 100%;
+  #fullpage > p {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin-bottom: 1rem;
+    pointer-events: none;
+    font-size: 1.5rem;
+  }
+
+  /* hover on images */
+  .full {
+    content: "";
+    position: relative;
+  }
+
+  .full .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    object-fit: contain;
-}
-
-.portgal > div:nth-child(2) {
+    height: 100%;
+    color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    transition: all 100ms ease-in;
+    opacity: 0%;
 }
 
-.awcontainer {
-    box-sizing: border-box;
-}
+.full:hover .overlay {
+    background: rgba(0, 0, 0, .6);
+    color: var(--white);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 100%;
+}   
 
-@keyframes animationworkshop {
-	0% {background-position: 0px;}
-	100% {background-position: -23000px;}
-}
-
-@media screen and (orientation: landscape) and (max-width: 768px) {
-    .headerLogo img {
-    margin-top: 0rem;
-    }
+.overlay p {
+    font-size: 1.5rem;
 }

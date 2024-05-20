@@ -8,13 +8,14 @@
         <meta name="description" content="Videoproduktion">
         <link rel="stylesheet" type="text/css" href="/CSS/graphicdesign.css">
         <link rel="stylesheet" type="text/css" href="/CSS/navigation.css">
+        <script src="/JS/imagefull.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="getPics()">
         <header>
             <div class="menuparent textmenu">
                 <input class="hidden" type="checkbox" id="active">
@@ -59,20 +60,21 @@
                     <div class="portgalitems">
                         <h2>Plakater</h2>
                         <div class="poster">
-                            <div>
+                            <div class="full">
                                 <img src="/img/graphicdesign/plakat.svg" alt="">
                                 <p>- Plakat til præsentation af interaktivt oplevelse, Story Islands</p>
+                                <div class="overlay"><p>Tryk for at forstørre</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="portgalitems">
-                        <div class="video">
-                        <h2>Video animation</h2>
-                        <video poster="" controls>
-                            <source src="/img/animation/movingart.webm" type="video/webm">
-                            <source src="/img/animation/movingart.webm" type="video/mp4">
-                        </video>
-                        <p>- Et maleri bragt til live: Thomas Badger, Fruit on a Table</p>
+                        <h2>Plakater</h2>
+                        <div class="poster">
+                            <div class="full">
+                                <img src="/img/graphicdesign/plakat.svg" alt="">
+                                <p>- Plakat til præsentation af interaktivt oplevelse, Story Islands</p>
+                                <div class="overlay"><p>Tryk for at forstørre</p></div>
+                            </div>
                         </div>
                     </div>
                     <div class="portgalitems">
@@ -86,6 +88,7 @@
                 </main>
             </div>
         </div>
+        <div id="fullpage" onclick="this.style.display='none';"><p>Tryk for at lukke</p></div>
     <footer class="footer">
         <div class="footerfade">
         </div>
