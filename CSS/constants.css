@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+.notext {
+  font-size: 0;
+}
+
 /* Wrappers */
 .sitewrap {
   max-width: var(--maxwidth);

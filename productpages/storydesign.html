@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = “theme-color” content = “#0a0a0a”>
+    <meta name="theme-color" content="#0a0a0a">
+
     <title>storydesign | makerSJÆL - din go-to multimediedesigner</title>
     <meta name="description" content="storydesign">
     <link rel="stylesheet" type="text/css" href="/CSS/storydesign.css">
@@ -21,7 +22,7 @@
         <input class="hidden" type="checkbox" id="active">
         <label for="active" class="menu-btn"><img src="/img/menuframe.svg" alt="Menuknap "><span></span></label>
         <label for="active" class="close"></label>
-        <nav class="menuwrapper">
+        <nav aria-label="mobile menu" class="menuwrapper">
           <ul>
             <li class="separatorline"></li>
             <li><a href="/index.html">FORSIDE</a></li>
@@ -37,7 +38,7 @@
         <a href="/index.html"><img src="/img/logosmall.svg" alt="makerSJÆL logo"></a>
       </div>
       <div class="menu2">
-        <nav class="topfade1 menuparent2 textmenu">
+        <nav aria-label="desktop- and tablet-menu" class="topfade1 menuparent2 textmenu">
           <ul class="menu2ani">
             <li><a id="logominifix" href="/index.html"><img src="/img/logosmall.svg" alt="makerSJÆL logo"></a></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/index.html">FORSIDE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -62,7 +63,7 @@
                 <h2>Spildemo</h2>
                 <p>Dette er et spil som har forskellige algoritmer til at trigger forskellige endelser. Størstedelen af udviklingen af spillets design, drejede sig om fortællingen. Spillet skal afspejle valg og konsekvenser, og også livets tilfældigheder. <br><br> Hvor mange points kan du få? <br><br> Prøv spillet her:</p>
                 <div class="alignknap">
-                  <a target=”_blank” href="http://www.rpg.lefty.dk/"><div class="CTA1 textbutton">Story Islands</div></a>        
+                  <a target="blank" href="http://www.rpg.lefty.dk/"><div class="CTA1 textbutton">Story Islands</div></a>
                 </div>
               </div>
             </div>
@@ -70,17 +71,18 @@
               <div>
                 <h2>Story islands</h2>
                 <div id="img1">
-                  <div class="full">
-                      <img src="/img/storydesign/storyboarder.gif" alt="Animeret GIF af storyboard">
-                      <div class="overlay"><p>Tryk for at forstørre</p></div>
-                  </div>
-                <p>- Et storyboard der gik forud for videon, som gik forud for appen osv.. Rigtig mange gode fortællinger, starter med et storyboard, eller en storyline.</p>
+                    <div class="full">
+                        <img src="/img/storydesign/storyboarder.gif" alt="Animeret GIF af storyboard">
+                        <div class="overlay"><p>Tryk for at forstørre</p></div>
+                    </div>
+                  <p>- Et storyboard der gik forud for videon, som gik forud for appen osv.. Rigtig mange gode fortællinger, starter med et storyboard, eller en storyline.</p>
+                </div>
               </div>
             </div>
             <div class="portgalitems">
               <div>
                 <h2>Story islands</h2>
-                <video poster="" controls>
+                <video poster="/img/poster/sifp.webp" controls>
                   <source src="/img/videoproduktion/storyislands_full.webm" type="video/webm">
                   <source src="/img/videoproduktion/storyislands_full.mp4" type="video/mp4">
                 </video>
@@ -94,9 +96,8 @@
                       <img src="/img/storydesign/DFL_RPG_QR.svg" alt="QR-kode til app-demo">
                       <div class="overlay"><p>Tryk for at forstørre</p></div>
                   </div>
-                  <p></p>
               </div>
-          </div>
+            </div>
           </section>
         </main>
       </div>
@@ -116,7 +117,7 @@
             <img class="footerlogo" src="/img/LOGO_red.svg" alt="Lille rødt makerSJÆL logo">
           </div>
         </div>
-        <a href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7" class="footerline2"></a>
+<a class="notext footerline2" href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7">Link til adresse på google-maps</a>
         <div class="footericonswrapper">
           <div class="footericons">
             <a href="https://www.youtube.com/@FlydendeFred"><img src="/img/yt.svg" alt="Youtube icon med link til FlydendeFreds youtubekanal"></a>

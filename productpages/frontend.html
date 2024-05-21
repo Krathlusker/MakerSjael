@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = “theme-color” content = “#0a0a0a”>
+    <meta name="theme-color" content="#0a0a0a">
     <title>Front-end | makerSJÆL - din go-to multimediedesigner</title>
     <meta name="description" content="Front-end (& back-end) udvikling">
     <link rel="stylesheet" type="text/css" href="/CSS/frontend.css">
@@ -20,7 +20,7 @@
         <input class="hidden" type="checkbox" id="active">
         <label for="active" class="menu-btn"><img src="/img/menuframe.svg" alt="Menuknap "><span></span></label>
         <label for="active" class="close"></label>
-        <nav class="menuwrapper">
+        <nav aria-label="mobile menu" class="menuwrapper">
           <ul>
             <li class="separatorline"></li>
             <li><a href="/index.html">FORSIDE</a></li>
@@ -36,7 +36,7 @@
         <a href="/index.html"><img src="/img/logosmall.svg" alt="makerSJÆL logo"></a>
       </div>
       <div class="menu2">
-        <nav class="topfade1 menuparent2 textmenu">
+        <nav aria-label="desktop- and tablet-menu" class="topfade1 menuparent2 textmenu">
           <ul class="menu2ani">
             <li><a id="logominifix" href="/index.html"><img src="/img/logosmall.svg" alt="makerSJÆL logo"></a></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/index.html">FORSIDE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -58,13 +58,13 @@
             </div>
             <div class="portgalitems">
               <div class="video">
-                <h2>HTML & CSS</h2>
+                <h2>HTML &amp; CSS</h2>
                  <div>
                     <video id="video1" autoplay playsinline loop muted>
                       <source src="/img/frontend/codinganimation.webm" type="video/webm">
                       <source src="/img/frontend/codinganimation.mp4" type="video/mp4">
                     </video>
-                    <p>- Et udvalg af CSS-kode fra denne hjemmeside.</p>
+                    <p>- Et udvalg af CSS-kode fra denne hjemmeside</p>
                  </div>
               </div>
             </div>
@@ -75,10 +75,10 @@
                     <p><br>Fordi prototyper skalere bedre på figmas egen side, kan du trykke her for at prøve en af mine nuværende prototyper:<br><br></p>
                     <div>
                         <div class="alignknap">
-                            <a target=”_blank” href="https://www.figma.com/proto/gJLAy7wqKcNb9TPgbl0WIg/News-app?node-id=1-6&viewport=57%2C-639%2C0.55&t=vz8zqltdkq9Yljyz-0&scaling=scale-down&starting-point-node-id=1%3A6"><div class="CTA1 textbutton">news-app</div></a>        
+                            <a target="blank" href="https://www.figma.com/proto/gJLAy7wqKcNb9TPgbl0WIg/News-app?node-id=1-6&viewport=57%2C-639%2C0.55&t=vz8zqltdkq9Yljyz-0&scaling=scale-down&starting-point-node-id=1%3A6"><div class="CTA1 textbutton">news-app</div></a>
                         </div>
                         <div class="alignknap">
-                            <a target=”_blank” href="https://www.figma.com/proto/WYQ4pwSuuIQYiMf8YRAOxg/Prototype---HiFi---LoFi---MakerSj%C3%A6l?page-id=34%3A70&node-id=34-175&viewport=857%2C574%2C0.37&t=KKrQTZ3lJJFW8AkU-1&scaling=scale-down&starting-point-node-id=34%3A175"><div class="CTA1 textbutton">makerSJÆL</div></a>        
+                            <a target="blank" href="https://www.figma.com/proto/WYQ4pwSuuIQYiMf8YRAOxg/Prototype---HiFi---LoFi---MakerSj%C3%A6l?page-id=34%3A70&node-id=34-175&viewport=857%2C574%2C0.37&t=KKrQTZ3lJJFW8AkU-1&scaling=scale-down&starting-point-node-id=34%3A175"><div class="CTA1 textbutton">makerSJÆL</div></a>
                         </div>
                     </div>
                 </div>
@@ -87,24 +87,24 @@
                 <div>
                     <h2>En smule back-end kan også lade sig gøre</h2>
                     <p>Her kan du se et eksempel på 2 livestream-kameraer, som bliver renderet på en streamingserver. Der kører en proxyhost, som "sender" signalet ud på internettet. Al programkode er i python, der er anvendt forskellige automatiseringssoftware og OBS som encoder og programvælger.</p>
-                </div>             
+                </div>
                 <div class="video">
                     <div class="containeriframe">
-                        <iframe class="responsive-iframe" src="http://85.27.192.76:8080/d51b1515-c5f2-4edd-a4da-d4401af2346d.html"></iframe>
+                        <iframe title="Livestream af Svendborgsund fra Carlsberg Camping" class="responsive-iframe" src="http://85.27.192.76:8080/d51b1515-c5f2-4edd-a4da-d4401af2346d.html"></iframe>
                     </div>
                     <p>- Livestream af Svendborgsund fra Carlsberg Camping</p>
                 </div>
                 <div class="video">
                     <div class="containeriframe">
-                        <iframe class="responsive-iframe" src="http://85.27.192.76:8080/ee8b7b56-cb25-484f-8867-de58a250e186.html"></iframe>
+                        <iframe title="Livestream af Thurøbund fra Carlsberg Camping" class="responsive-iframe" src="http://85.27.192.76:8080/ee8b7b56-cb25-484f-8867-de58a250e186.html"></iframe>
                     </div>
                     <p>- Livestream af Thurøbund fra Carlsberg Camping</p>
                 </div>
                 <div class="video">
                     <div class="containeriframe">
-                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/vC1BcNdMYxY?si=uqLNnonkBHGBIq4_"></iframe>
+                        <iframe title="Samling af begge streams i OBS, automatisering af system, automatisk transition matrix" class="responsive-iframe" src="https://www.youtube.com/embed/vC1BcNdMYxY?si=uqLNnonkBHGBIq4_"></iframe>
                     </div>
-                    <p>- Samling af begge streams i OBS, automatisering af system, automatisk transition matrix.</p>
+                    <p>- Samling af begge streams i OBS, automatisering af system, automatisk transition matrix</p>
                 </div>
             </div>
           </section>
@@ -125,7 +125,7 @@
             <img class="footerlogo" src="/img/LOGO_red.svg" alt="Lille rødt makerSJÆL logo">
           </div>
         </div>
-        <a href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7" class="footerline2"></a>
+<a class="notext footerline2" href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7">Link til adresse på google-maps</a>
         <div class="footericonswrapper">
           <div class="footericons">
             <a href="https://www.youtube.com/@FlydendeFred"><img src="/img/yt.svg" alt="Youtube icon med link til FlydendeFreds youtubekanal"></a>
