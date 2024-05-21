@@ -34,7 +34,8 @@
 
 .poster {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .poster > div {
@@ -43,17 +44,34 @@
 }
 
 /* Poster */
-.portgal > div:nth-child(2) {
+.portgal > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* The one after poster2 */
+.portgal > div:nth-child(3) {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* The one after poster */
-.portgal > div:nth-child(3) {
+.logoer {
+    width: 100%;
+}
+
+.logoer > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    gap: 1rem;
+}
+
+.logoer > div > div > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
   /* Sections MQ's */
@@ -105,7 +123,7 @@
     font-size: 1.5rem;
   }
 
-  /* hover on images */
+  /* Hover on images */
   .full {
     content: "";
     position: relative;
@@ -139,4 +157,8 @@
 
 .overlay p {
     font-size: 1.5rem;
+}
+
+.radius {
+    border-radius: 50%;
 }

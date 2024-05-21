@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* This is a CSS file */
+
+@import url(index.css);
+
+
+
+.headerLogo {
+    height: 8rem;
+}
+
+.headerLogo img {
+    height: 4.5rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+}
+
+.portgal {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.portgalitems {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.portgalitems > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.portgal video, .portgal img{
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+}
+
+/* The one after poster2 */
+.portgal > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  /* Sections MQ's */
+@media screen and (min-width: 768px) {
+    .headerLogo {
+      padding-top: 4rem;
+      height: 4rem;
+      margin-bottom: 0;
+    }
+
+    .headerLogo img {
+        display: none;
+    }
+
+    .poster > div {
+        width: 100%;
+        max-width: 100%;
+    }   
+}
+
+.alignknap {
+    justify-content: left;
+}
+
+#img2 {
+
+    max-width: 70%;
+}
+
+#centerimg1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Fullscreen images system */
+#fullpage {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  #fullpage > p {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin-bottom: 1rem;
+    pointer-events: none;
+    font-size: 1.5rem;
+  }
+
+  /* Hover on images */
+  .full {
+    content: "";
+    position: relative;
+    display: flex;
+  }
+
+  .full .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 100ms ease-in;
+    opacity: 0%;
+}
+
+.full:hover .overlay {
+    background: rgba(0, 0, 0, .6);
+    color: var(--white);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 100%;
+}   
+
+.overlay p {
+    font-size: 1.5rem;
+}
+
+.radius {
+    border-radius: 50%;
+}

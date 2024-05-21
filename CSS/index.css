@@ -348,6 +348,7 @@ header {
   .footericonswrapper > div {
     font-size: 1.5rem;
   }
+
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {

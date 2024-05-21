@@ -67,6 +67,15 @@
     .headerLogo img {
         display: none;
     }
+
+    .portgalitems {
+        max-height: 20rem;
+    }
+
+    .portgal {
+        gap: 4rem;
+    }
+
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px) {
