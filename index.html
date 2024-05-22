@@ -7,6 +7,10 @@
     <meta name="theme-color" content="#0a0a0a">
     <title>Forside | makerSJÆL - din go-to multimediedesigner</title>
     <meta name="description" content="Frontpage">
+    <link rel="preload" as="image" href="/img/hero.webp">
+    <link rel="preload" as="image" href="/img/headshot.webp">
+    <link rel="preload" as="image" href="/img/logosmall.svg">
+    <link rel="preload" as="image" href="/img/LOGO.svg">
     <link rel="stylesheet" type="text/css" href="/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="/CSS/navigation.css">
     <link rel="stylesheet" type="text/css" href="/CSS/gallery.css">
@@ -16,18 +20,18 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" as="style" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" as="style" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" as="style" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.gstatic.com/s/overpassmono/v16/_Xm5-H86tzKDdAPa-KPQZ-AC_COcRycquHlL6EXUonz0VOs.woff2" crossorigin as="font" type="font/woff2">
-    <link rel="preload" href="https://fonts.gstatic.com/s/didactgothic/v20/ahcfv8qz1zt6hCC5G4F_P4ASlUuYpg.woff2" crossorigin as="font" type="font/woff2">
-    <link rel="preload" href="https://fonts.gstatic.com/s/overpass/v13/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbPpqK.woff2" crossorigin as="font" type="font/woff2">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/overpassmono/v16/_Xm5-H86tzKDdAPa-KPQZ-AC_COcRycquHlL6EXUonz0VOs.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/didactgothic/v20/ahcfv8qz1zt6hCC5G4F_P4ASlUuYpg.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/overpass/v13/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbPpqK.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <header>
       <div class="menuparent textmenu">
         <input class="hidden" type="checkbox" id="active">
-        <label for="active" class="menu-btn"><img src="/img/menuframe.svg" alt="Menuknap "><span></span></label>
+        <label for="active" class="menu-btn"><img loading="lazy" src="/img/menuframe.svg" alt="Menuknap "><span></span></label>
         <label for="active" class="close"></label>
         <nav aria-label="mobile menu" class="menuwrapper">
           <ul>
@@ -44,7 +48,7 @@
       <div class="menu2">
         <nav aria-label="desktop- and tablet-menu" class="topfade1 menuparent2 textmenu">
           <ul class="menu2ani">
-            <li><a id="logominifix" href="/index.html"><img src="/img/logosmall.svg" alt="makerSJÆL logo"></a></li>
+            <li><a id="logominifix" href="/index.html"><img loading="lazy" src="/img/logosmall.svg" alt="makerSJÆL logo"></a></li>
             <li><a href="/index.html">&#62; FORSIDE &#60;</a></li>
             <li class="separatorline"></li>
             <li><a href="/portfolio.html"> PORTEFØLJE </a></li>
@@ -55,7 +59,7 @@
       </div>
       <div class="headerLogo">
         <div>
-          <img src="/img/LOGO.svg" alt="makerSJÆL logo">
+          <img loading="lazy" src="/img/LOGO.svg" alt="makerSJÆL logo">
         </div>
       </div>
   </header>
@@ -66,7 +70,7 @@
             <div id="about1" class="textpadding">
               <h1>FREDERIK KRATH <br>NIELSEN</h1>
               <div>
-                <img src="/img/LOGO.svg" alt="makerSJÆL logo">
+                <img loading="lazy" src="/img/LOGO.svg" alt="makerSJÆL logo">
                 <div>
                   <p>"Jeg tror på at du kan få større succes, hvis du fortæller din historie."</p>
                   <p>Multimediedesigner med erfaring inden for udvikling, designproces og contentproduktion.</p>
@@ -74,7 +78,7 @@
               </div>
             </div>
             <div id="about2" class="grad">
-              <img src="/img/headshot.webp" alt="Billede af Frederik Krath Nielsen, ejer af makerSJÆL">
+              <img loading="lazy" src="/img/headshot.webp" alt="Billede af Frederik Krath Nielsen, ejer af makerSJÆL">
             </div>
           </section>
           <section class="portfolio">
@@ -94,13 +98,13 @@
                     </li>
                     <li class="card">
                       <div class="img"><a draggable="false" href="/productpages/animation.html">
-                        <img id="galvid2" src="/img/animation/animationworkshop.gif" alt="Animeret GIF af en pakke spunk" draggable="false">
+                        <img loading="lazy" id="galvid2" src="/img/animation/animationworkshop.gif" alt="Animeret GIF af en pakke spunk" draggable="false" loading="lazy">
                       </a></div>
                       <h3>animation</h3>
                     </li>
                     <li class="card">
                       <div class="img"><a draggable="false" href="/productpages/photography.html">
-                        <img id="galvid4" src="/img/photography/Bro_Isolated.webp" alt="Bro i Hamborg" draggable="false">
+                        <img loading="lazy" id="galvid4" src="/img/photography/Bro_Isolated.webp" alt="Bro i Hamborg" draggable="false" loading="lazy">
                       </a></div>
                     <h3>Fotografering </h3>
                     </li>
@@ -123,7 +127,7 @@
                     </li>
                     <li class="card">
                       <div class="img"><a draggable="false" href="/productpages/storydesign.html">
-                        <img id="galvid6" src="/img/storydesign/storyboarder.gif" alt="Animeret GIF af et storyboard" draggable="false">
+                        <img loading="lazy" id="galvid6" src="/img/storydesign/storyboarder.gif" alt="Animeret GIF af et storyboard" draggable="false" loading="lazy">
                       </a></div>
                       <h3>storydesign og spildemo</h3>
                     </li>
@@ -154,19 +158,19 @@
             <li><a href="mailto:mail@makersjæl.dk" class="CTAlink backwardstext hover-underline-animation">&#8226; KONTAKT</a></li>
           </ul>
           <div class="footerlogosub">
-            <img class="footerlogo" src="/img/LOGO_red.svg" alt="Lille rødt makerSJÆL logo">
+            <img loading="lazy" class="footerlogo" src="/img/LOGO_red.svg" alt="Lille rødt makerSJÆL logo" loading="lazy">
           </div>
         </div>
         <a class="notext footerline2" href="https://maps.app.goo.gl/XJ9K2fn2kdhjWNqX7">Link til adresse på google-maps</a>
         <div class="footericonswrapper">
           <div class="footericons">
-            <a href="https://www.youtube.com/@FlydendeFred"><img src="/img/yt.svg" alt="Youtube icon med link til FlydendeFreds youtubekanal"></a>
-            <a href="https://carlsbergcamping.dk/"><img src="/img/camping.svg" alt="Piktogram af telt som betyder camping med link til Carlsberg Campings hjemmeside"></a>
-            <a href="https://www.linkedin.com/in/frederik-krath-nielsen/"><img src="/img/linkedIn_icon.svg" alt="LinkedIn icon med link til Frederik Krath Nielsens linkedIn-side"></a>
+            <a href="https://www.youtube.com/@FlydendeFred"><img loading="lazy" src="/img/yt.svg" alt="Youtube icon med link til FlydendeFreds youtubekanal" loading="lazy"></a>
+            <a href="https://carlsbergcamping.dk/"><img loading="lazy" src="/img/camping.svg" alt="Piktogram af telt som betyder camping med link til Carlsberg Campings hjemmeside" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/frederik-krath-nielsen/"><img loading="lazy" src="/img/linkedIn_icon.svg" alt="LinkedIn icon med link til Frederik Krath Nielsens linkedIn-side" loading="lazy"></a>
           </div>
           <div class="footericonstext textfooter2">
-            <div><a href="mailto:mail@makersjæl.dk"><img src="/img/alternate_email.svg" alt="mail ikon">mail@makersjæl.dk</a></div>
-            <div><a href="https://maps.app.goo.gl/jDF7qEXrdrc8YeGe6"><img src="/img/navigation.svg" alt="navigation ikon">Sundbrovej 5700 Svendborg</a></div>
+            <div><a href="mailto:mail@makersjæl.dk"><img loading="lazy" src="/img/alternate_email.svg" alt="mail ikon" loading="lazy">mail@makersjæl.dk</a></div>
+            <div><a href="https://maps.app.goo.gl/jDF7qEXrdrc8YeGe6"><img loading="lazy" src="/img/navigation.svg" alt="navigation ikon">Sundbrovej 5700 Svendborg</a></div>
           </div>
         </div>
       </div>
