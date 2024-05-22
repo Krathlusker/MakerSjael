@@ -46,6 +46,7 @@ a {
   text-decoration: none;
 }
 
+
 .unsetlink {
   text-decoration: underline;
   text-decoration-color: var(--red);
@@ -53,6 +54,12 @@ a {
 
 .notext {
   font-size: 0;
+}
+
+
+/* iframe settings */
+iframe {
+  border: none;
 }
 
 /* Wrappers */
