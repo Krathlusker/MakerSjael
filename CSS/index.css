@@ -55,6 +55,13 @@ header {
   display: none;
 }
 
+#about1 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
 #about2 {
   min-width: 4rem;
 }
@@ -64,6 +71,22 @@ header {
   max-width: 100%;
   height: 100%;
   max-height: 30rem;
+}
+
+.ommig {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Scroll to link */
+#slommig {
+  scroll-margin-block-start: 5rem;
+  scroll-margin-block-end: 5rem;
+}
+
+#textslommig {
+  color: var(--red);
 }
 
 .grad img {
@@ -197,7 +220,7 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 0.3rem;
-  font-size: calc((1.45vh + 1.5vw))
+  font-size: calc((1.45vh + 1.45vw))
 }
 
 .footericonstext a {
@@ -279,15 +302,15 @@ header {
     max-width: var(--maxwidth);
   }
 
-    .headerLogo {
-      padding-top: 4rem;
-      height: 30rem;
-      margin-bottom: -26rem;
-    }
+  .headerLogo {
+    padding-top: 4rem;
+    height: 30rem;
+    margin-bottom: -26rem;
+  }
 
-    .headerLogo img {
-        display: none;
-    }
+  .headerLogo img {
+      display: none;
+  }
 
   #about1 {
     padding-top: 6rem;
@@ -301,7 +324,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding-left: 2rem;
   }
 
@@ -311,7 +334,7 @@ header {
   }
   
   #about2 > img {
-    max-height: 50rem;
+    max-height: 48rem;
   }
 
   .footerfade {
@@ -343,10 +366,7 @@ header {
   .footericonstext {
     line-height: 2.5rem;
     align-items: flex-end;
-  }
-
-  .footericonswrapper > div {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
 }
