@@ -102,6 +102,16 @@ p {
     letter-spacing: .1pt;
 }
 
+.p {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 108%;
+  /* Actually improves readability a bit */
+  letter-spacing: .1pt;
+}
+
 h1 {
     font-family: "Overpass", sans-serif;
     font-weight: 100;
