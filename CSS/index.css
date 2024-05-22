@@ -22,6 +22,7 @@ header {
   background-size: cover;
   height: 25rem;
   margin-bottom: -5rem;
+  z-index: 2;
 }
 
 .headerLogo div {
@@ -40,6 +41,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   gap: 0.5rem;
+  z-index: 11;
 }
 
 #about1 {
@@ -47,7 +49,7 @@ header {
   justify-content: center;
   gap: 1rem;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   padding-top: 4rem;
 }
 
