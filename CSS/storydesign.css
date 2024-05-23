@@ -69,15 +69,11 @@
 }
 
 #img2 {
-
-    max-width: 70%;
-}
-
-#centerimg1 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
+
 /* Fullscreen images system */
 #fullpage {
     display: none;

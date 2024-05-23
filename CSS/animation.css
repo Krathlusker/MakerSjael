@@ -30,22 +30,6 @@
     width: 100%;
 }
 
-/* Text frames */
-.left1, .right2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    gap: 1rem;
-}
-
-/* Content frames */
-.right1, .left2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 /* Individual video/image settings */
 .portgalitems:nth-child(5) > h2 {
     -webkit-hyphens: manual;
