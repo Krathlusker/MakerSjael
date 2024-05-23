@@ -200,14 +200,19 @@ transition: background .3s;
         list-style: outside none none;
     }
 
-    #logominifix {
-        padding: 0 0 0 0;
-    }
 
     .menu2ani a {
         padding: .3em .6em;
         position: relative;
         text-decoration: none;
+    }
+
+    #logominifix1 {
+        padding: 0 0 0 0;
+    }
+
+    #logominifix2 {
+        padding: 0 0 0 0;
     }
 
     .menu2ani a::before,
