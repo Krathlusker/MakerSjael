@@ -135,7 +135,7 @@ transition: background .3s;
         display: unset;
         position: fixed;
         width: 100%;
-        z-index: 10;
+        z-index: 1000;
         opacity: 100;
         animation: navgradient linear forwards;
         /* OBS !!!! THOMAS, ANDREA, EVERYONE !!! Dette validere ikke hos W3 pga. VARIABLER! MEN KODEN ER ALTSÅ FUNGERENDE OG KORREKT!*/
