@@ -67,19 +67,6 @@
     }
 }
 
-
-
-/* Animation */
-.sprite {	
-	background-image: url('/img/spritesheet.png');
-    background-repeat: no-repeat;
-    display: flex;
-    animation: animationworkshop 3s steps(23) infinite;	
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
 .portgal > div:nth-child(2) {
     display: flex;
     justify-content: center;

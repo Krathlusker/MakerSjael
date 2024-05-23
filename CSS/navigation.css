@@ -167,7 +167,8 @@ transition: background .3s;
         max-width: var(--maxwidth);
         line-height: 4.5rem;
         animation: navsize linear forwards;
-        /* OBS !!!! THOMAS, ANDREA, EVERYONE !!! Dette validere ikke hos W3 pga. VARIABLER! MEN KODEN ER ALTSÅ FUNGERENDE OG KORREKT!*/
+        /* OBS !!!! THOMAS, ANDREA, EVERYONE !!! Dette validere ikke hos W3 pga. VARIABLER! MEN KODEN ER ALTSÅ FUNGERENDE OG KORREKT! Der er begrænset kompatibilitet for safari på ios, HVOR MENUEN ER SKJULT. Sååå <3*/
+        /* Animation-timeline bliver her brugt til at animere menuen, efter hvor du er på skærmen, og ud fra scroll-event-listeners - det er i pipeline for Safari iOS. Experimental for nu. */
         animation-timeline: view();
         animation-range-start: 100vh;
         animation-range-end: 110vh;
